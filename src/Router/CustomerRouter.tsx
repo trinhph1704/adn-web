@@ -2,13 +2,9 @@ import { Route, Routes } from "react-router-dom";
 
 import { NotFound } from "../components";
 import {
-  Blogs,
   BookingList,
-  Contacts,
-  DetailServices,
   EditBooking,
   EditProfile,
-  Services
 } from "../features/customer";
 
 import { BookingStatusPage } from "../features/customer/pages/BookingStatusPage";
