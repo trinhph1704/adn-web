@@ -4,32 +4,14 @@ export interface TestBookingResponse {
   clientId: string;
   clientName: string;
   email: string;
-  phone?: string;
-  address?: string;
   appointmentDate: string;
   price: number;
   collectionMethod: string;
-  status: string; // Sử dụng const enum
+  status: string;
   note: string;
   createdAt: string;
   updatedAt: string;
   kitId?: string;
-}
-
-export interface TestBookingResponseStaff {
-  id: string;
-  testServiceId: string;
-  clientId: string;
-  clientName: string;
-  email: string;
-  address: string;
-  appointmentDate: string;
-  price: number;
-  collectionMethod: string;
-  status: string; // Sử dụng const enum
-  note: string;
-  createdAt: string;
-  updatedAt: string;
 }
 
 export interface TestBookingStatusRequest {
@@ -53,3 +35,4 @@ export function renderCollectionMethod(method: string) {
       return "Không rõ";
   }
 }
+

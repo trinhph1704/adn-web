@@ -31,19 +31,6 @@ const UserMangement: React.FC = () => {
     fetchUsers();
   }, [fetchUsers]);
 
-  const toggleUserStatus = (id: number) => {
-    setUsers((prev) =>
-      prev.map((user) =>
-        user.id === id
-          ? {
-            ...user,
-            status: user.status === 'Hoạt động' ? 'Đã khóa' : 'Hoạt động',
-          }
-          : user
-      )
-    );
-  };
-
   const handleAddUser = async (data: any) => {
     try {
       await createStaffApi(data);

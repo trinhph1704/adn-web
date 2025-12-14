@@ -550,7 +550,7 @@ export const Doctors = (): React.JSX.Element => {
             </p>
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
               <Button
-                onClick={openBookingModal}
+                onClick={() => openBookingModal()}
                 className="px-8 py-4 text-lg font-semibold text-blue-900 bg-white rounded-full hover:bg-blue-50 hover:text-blue-900"
               >
                 <CalendarIcon className="w-5 h-5 mr-2" />

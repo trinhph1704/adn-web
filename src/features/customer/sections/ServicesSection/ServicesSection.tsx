@@ -245,7 +245,7 @@ export const ServicesSection = (): React.JSX.Element => {
               Liên hệ với chúng tôi ngay hôm nay để đặt lịch tư vấn
             </p>
             <Button
-              onClick={openBookingModal}
+              onClick={() => openBookingModal()}
               className="px-6 py-3 text-sm font-semibold text-yellow-600 transition-all duration-300 bg-white rounded-full shadow-lg hover:bg-yellow-400 hover:text-blue-800 md:px-8 lg:px-10 xl:px-12 md:py-4 lg:py-5 xl:py-6"
             >
               Đặt Lịch Hẹn

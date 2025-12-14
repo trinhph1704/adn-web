@@ -81,7 +81,7 @@ export const EditBooking = (): React.JSX.Element => {
   const [showSuccess, setShowSuccess] = useState(false);
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const [apiError, setApiError] = useState<string | null>(null);
-  const [originalBookingData, setOriginalBookingData] = useState<any>(null);
+  const [_originalBookingData, setOriginalBookingData] = useState<any>(null);
 
   const timeSlots = [
     '08:00', '08:30', '09:00', '09:30', '10:00', '10:30',

@@ -62,9 +62,9 @@ export const createTestResultApi = async (
 };
 
 // PUT: Cập nhật TestResult theo id
-export const updateTestResultApi = async (data: TestResultRequest, token: string): Promise<TestResultResponse> => {
+export const updateTestResultApi = async (id: string, data: TestResultRequest, token: string): Promise<TestResultResponse> => {
   try {
-    const response = await rootApi.put<{ data: TestResultResponse }>(`/TestResult/${data.id}`, data, {
+    const response = await rootApi.put<{ data: TestResultResponse }>(`/TestResult/${id}`, data, {
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${token}`,

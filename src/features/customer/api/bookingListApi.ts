@@ -424,7 +424,7 @@ export const testCompleteBookingFlow = async (): Promise<{ success: boolean; mes
       };
     }
     
-    const result = await response.json();
+    const _responseData = await response.json();
     console.log('✅ Step 4 Passed: API call successful');
     
     // Step 5: Test complete getBookingListApi function

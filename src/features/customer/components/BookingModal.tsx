@@ -35,9 +35,9 @@ interface BookingModalProps {
   selectedService?: {
     id: string;
     name: string;
-    category: string; // 'civil' or 'legal'
+    category?: string; // 'civil' or 'legal'
     price: number;
-    collectionMethod: number; // 0 = home/self, 1 = clinic
+    collectionMethod?: number; // 0 = home/self, 1 = clinic
     testServiceInfo?: {
       id: string;
       [key: string]: any;

@@ -204,7 +204,7 @@ export class PaymentLogger {
       timestamp: new Date().toISOString()
     };
 
-    return summary;
+    console.log('[PaymentLogger] Payment Summary:', summary);
   }
 }
 

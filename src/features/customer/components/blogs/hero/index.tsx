@@ -4,7 +4,7 @@ interface BlogHeroProps {
   isVisible: boolean;
 }
 
-export const BlogHero: React.FC<BlogHeroProps> = ({ isVisible }) => {
+export const BlogHero: React.FC<BlogHeroProps> = ({ isVisible: _isVisible }) => {
   return (
     <section className="relative w-full py-20 overflow-hidden md:py-28 bg-blue-50">
       <div className="absolute inset-0 opacity-10">

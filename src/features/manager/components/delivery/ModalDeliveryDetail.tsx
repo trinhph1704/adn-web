@@ -93,9 +93,6 @@ const DeliveryDetailModal = ({
       await assignDeliveryStaff(delivery.id, value, token);
       setSelectedStaff(value);
 
-      // Cập nhật delivery object với staff mới
-      const updatedDelivery = { ...delivery, staff: value };
-
       message.success("Phân công nhân viên thành công");
 
       // Gọi onRefresh để cập nhật data từ server

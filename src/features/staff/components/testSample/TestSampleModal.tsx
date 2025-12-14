@@ -39,7 +39,7 @@ type Props = {
 };
 
 export default function TestSampleModal({ open, onClose, bookingId, onSampleCreated, existingDonorNames }: Props) {
-  const [kits] = useState<TestKitResponse[]>([]);
+  const [_kits] = useState<TestKitResponse[]>([]);
   const [bookings, setBookings] = useState<TestBookingResponse[]>([]);
   const [collectedById, setCollectedById] = useState<string>("");
   const [isSubmitting, setIsSubmitting] = useState(false);

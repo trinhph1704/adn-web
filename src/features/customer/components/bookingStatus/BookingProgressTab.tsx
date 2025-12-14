@@ -1,4 +1,4 @@
-import { FilePenIcon, StarIcon } from "lucide-react";
+import { FilePenIcon as _FilePenIcon, StarIcon } from "lucide-react";
 import type { BookingDetail, TestProgressData } from "../../types/bookingTypes";
 import type { UserFeedback } from "../../api/existingFeedbackApi";
 import { Button } from "../ui/Button";

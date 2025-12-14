@@ -16,7 +16,7 @@ const DeliveryTable = () => {
   const [loading, setLoading] = useState<boolean>(true);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [confirmLoading, setConfirmLoading] = useState(false);
-  const [filterStatus, setFilterStatus] = useState<string>("All");
+  const [filterStatus, _setFilterStatus] = useState<string>("All");
   const selectedOrder = data.find((item) => item.id === selectedId);
   const [uploadedImage, setUploadedImage] = useState<File | null>(null);
 

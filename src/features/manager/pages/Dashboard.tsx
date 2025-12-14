@@ -14,7 +14,7 @@ function Dashboard() {
   const [tests, setTests] = useState<any[]>([]);
   const [feedbacks, setFeedbacks] = useState<FeedbackResponse[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [_error, setError] = useState<string | null>(null);
   const [dateFilter, setDateFilter] = useState({
     startDate: "",
     endDate: "",

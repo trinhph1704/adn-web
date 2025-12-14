@@ -175,8 +175,6 @@ export const generateProgressData = (
     if (bookingStatus === 'DeliveringKit') kitDetails.push('Bộ kit đang trên đường giao đến bạn.');
   }
 
-  const showKitConfirmBtn = bookingStatus === 'DeliveringKit';
-
   steps.push({
     id: 3,
     title: 'Nhận TestKit',

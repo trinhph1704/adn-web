@@ -23,8 +23,7 @@ const ResultSent = ({ onRowClick, onComplete }: Props) => {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const token = localStorage.getItem("token") || "";
-      const result = await getTestBookingApi(token);
+      const result = await getTestBookingApi();
       const filtered = result.filter((item) => item.status === "Testing");
       setData(filtered);
     } catch (error) {
@@ -48,12 +47,7 @@ const ResultSent = ({ onRowClick, onComplete }: Props) => {
     if (!selectedId) return;
     setConfirmLoading(true);
     try {
-      const token = localStorage.getItem("token") || "";
-
-      await updateTestBookingStatusStaff(
-        { bookingId: selectedId, status: 8 },
-        token
-      );
+      await updateTestBookingStatusStaff({ bookingId: selectedId, status: 8 });
 
       message.success("Đã gửi kết quả và cập nhật trạng thái.");
       setOpenModal(false);
